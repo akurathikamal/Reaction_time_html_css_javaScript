@@ -5,3 +5,6 @@
     position:relative;
     
 }
+header,section{
+    text-align: center;
+}
