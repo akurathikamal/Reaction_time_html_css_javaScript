@@ -1,6 +1,6 @@
 var box=document.getElementById("box");
-var d=new Date();
-var start=d.getTime();
+
+var start=new Date().getTime();
 function move(){
     var top;
     var left;
@@ -13,10 +13,10 @@ function move(){
     document.getElementById("box").style.width=wh+"px";
     document.getElementById("box").style.height=wh+"px";
     document.getElementById("box").style.display="block";
-    start=d.getTime();
+    document.getElementById("box").style.backgroundColor=`rgb(${(Math.random())*265},${(Math.random())*265},${(Math.random())*265}`;
+    start=new Date().getTime();
 }
-
-  box.onclick=function(){
+box.onclick=function(){
     box.style.display="none";
     var endtime=new Date().getTime();
     var rectiontime=(endtime-start)/1000;
